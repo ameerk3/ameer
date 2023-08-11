@@ -1,0 +1,201 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int main ()
+{
+printf(" \n");
+printf(" | |\n");
+printf(" | CANTEEN MENU MANAGEMENT SYSTEM |\n");
+printf(" | |\n");
+printf(" | |\n");
+printf("\n \xdb\xdb\xdb\xdb\xdb\ login form \xdb\xdb\xdb\xdb\xdb\ \n");
+char a[20],b[10];
+printf("\n\n Name: ");
+scanf("%s",&a);
+printf("\n password : ");
+scanf("%s",&b);
+if(strcmp(a,"siva")==0 && strcmp(b,"78")==0)
+printf(" \n\n\n WELCOME TO CAFETERIA ORDERSYSTEM !!!! LOGIN IS SUCCESSFUL.\n\n\n");
+else
+printf(" \n\n\n \t\t Incorrect password!! Try Again. ");
+getch();
+printf("\n\n\n CANTEEN TIME:\n");
+printf("\n Breakfast - 8.00am to 9.15pm\n");
+printf("\n Lunch - 12.30pm to 1.30pm\n");
+printf("\n snacks - 6.00pm to 7.30pm\n");
+getch();
+printf("\n\n MENU \n");
+printf(" +======+");
+char choice[20];
+printf("\n\nType, Breakfast / Lunch / Snacks: ");
+scanf("%s",choice);
+if(strcmp(choice,"Breakfast")==0)
+{
+printf("\n\n\t\tBreakfast Menu\n\t\t ............. ");
+printf("\n\n\t1.Idly = Rs 8\t\t2.Dosa = Rs 10");
+printf("\n\t3.Poori = Rs 15\t\t4.Chappathi = Rs 15");
+printf("\n\t5.Appam = Rs 12\t\t6.Iddiyappam = 12");
+}
+if(strcmp(choice,"Lunch")==0)
+{
+printf("\n\nLunch Menu\n..........");
+printf("\n\n\t7.Chicken Biriyani = Rs 120\t\t8.Lemon Rice = Rs60");
+printf("\n\n\t9.Veg. Biriyani = Rs 80\t\t10.Fried Rice = Rs 80");
+}
+ if(strcmp(choice,"Snacks")==0)
+{
+printf("\n\nSnacks Menu\n...........");
+printf("\n\n\t11.Egg puffs = Rs 20\t\t12.Chicken puffs = Rs 25");
+printf("\n\n\t13.Chicken Roll = Rs 30\t\t14.Samosa = Rs 15");
+printf("\n\n\t15.Veg. puffs = Rs 20\t\t16.Milkshake = Rs 25");
+}
+printf("\n\n\n\t\t\t PLACE YOUR ORDER");
+printf("\n\t\t\t ~~~~~~~~~~~~~~~~");
+int qty,rate,total;
+char idly;
+int n;
+printf("\n\nEnter the meal number: ");
+scanf("%d",&n);
+switch(n)
+{
+case 1:
+printf("\n\tIdly");
+printf("\n\nEnter the quantity: ");
+scanf("%d",&qty);
+rate=8;
+total=qty*rate;
+printf("Total amount: %d",total);
+break;
+case 2:
+printf("\n\tDosa");
+printf("\n\nEnter the quantity: ");
+scanf("%d",&qty);
+rate=10;
+total=qty*rate;
+printf("Total amount: %d",total);
+break;
+case 3:
+printf("\n\tPoori");
+printf("\n\nEnter the quantity: ");
+scanf("%d",&qty);
+rate=15;
+total=qty*rate;
+printf("Total amount: %d",total);
+break;
+case 4:
+printf("\n\tChappathi");
+printf("\n\nEnter the quantity: ");
+scanf("%d",&qty);
+rate=15;
+total=qty*rate;
+printf("Total amount: %d",total);
+break;
+case 5:
+printf("\n\tAppam");
+printf("\n\nEnter the quantity: ");
+scanf("%d",&qty);
+rate=12;
+total=qty*rate;
+printf("Total amount: %d",total);
+break;
+case 6:
+printf("\n\tIddiyappam");
+printf("\n\nEnter the quantity: ");
+scanf("%d",&qty);
+rate=12;
+total=qty*rate;
+printf("Total amount: %d",total);
+break;
+case 7:
+printf("\n\tChicken Biriyani");
+printf("\n\nEnter the quantity: ");
+scanf("%d",&qty);
+rate=120;
+total=qty*rate;
+printf("Total amount: %d",total);
+break;
+case 8:
+printf("\n\tLemon Rice");
+printf("\n\nEnter the quantity: ");
+scanf("%d",&qty);
+rate=60;
+total=qty*rate;
+printf("Total amount: %d",total);
+break;
+case 9:
+printf("\n\tVeg.Biriyani");
+printf("\n\nEnter the quantity: ");
+scanf("%d",&qty);
+rate=80;
+total=qty*rate;
+printf("Total amount: %d",total);
+break;
+case 10:
+printf("\n\n\tFried Rice");
+printf("\nEnter the quantity: ");
+scanf("%d",&qty);
+rate=80;
+total=qty*rate;
+printf("Total amount: %d",total);
+break;
+case 11:
+printf("\n\tEgg Puffs");
+printf("\n\nEnter the quantity: ");
+scanf("%d",&qty);
+rate=20;
+total=qty*rate;
+printf("Total amount: %d",total);
+break;
+case 12:
+printf("\n\tChicken Puffs");
+printf("\n\nEnter the quantity: ");
+scanf("%d",&qty);
+rate=25;
+total=qty*rate;
+printf("Total amount: %d",total);
+break;
+case 13:
+printf("\n\tChicken Roll");
+printf("\n\nEnter the quantity: ");
+scanf("%d",&qty);
+rate=30;
+total=qty*rate;
+printf("Total amount: %d",total);
+break;
+case 14:
+printf("\n\tSamosa");
+printf("\n\nEnter the quantity: ");
+scanf("%d",&qty);
+rate=15;
+total=qty*rate;
+printf("Total amount: %d",total);
+break;
+case 15:
+printf("\n\tVeg Puffs");
+printf("\n\nEnter the quantity: ");
+scanf("%d",&qty);
+rate=20;
+total=qty*rate;
+printf("Total amount: %d",total);
+break;
+case 16:
+printf("\n\tMilkshake");
+printf("\n\nEnter the quantity: ");
+scanf("%d",&qty);
+rate=25;
+total=qty*rate;
+printf("Total amount: %d",total);
+break;
+default:
+printf("\n\n\t\t\t\tWRONG DATA");
+break;
+}
+printf("\n\n\n\t\t\t\n\t **********");
+printf("\t\t\t\n\t --------* Bill * -------- ");
+printf("\t\t\t\n\t | ********** |");
+printf("\n\t\t | |");
+printf("\n\t\t | Your Total Amount : %d |",total );
+printf("\n\t\t | |");
+printf("\n\t-------------------------------------- ");
+printf("\n\n\n");
+}
